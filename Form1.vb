@@ -47,7 +47,8 @@
         'Hashes must be used for a date. Month/Date/Year. 
         dtDateRegistered = #11/2/2020#
 
-        MsgBox("The make is " & stMake & " " & "the price is " & "$" & decPrice & ".")
+        MsgBox("The make is " & stMake & Environment.NewLine &
+               "the price is " & "$" & decPrice & ".")
 
 
     End Sub
