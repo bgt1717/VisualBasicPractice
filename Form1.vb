@@ -24,4 +24,31 @@
         MsgBox("Hello, how are you " & stFirstName & "?")
 
     End Sub
+
+    Private Sub btnDataTypes_Click(sender As Object, e As EventArgs) Handles btnDataTypes.Click
+        Dim stMake As String
+        Dim stModel As String
+        'Integer is a whole number. 
+        Dim iDoors As Integer
+        Dim stColor As String
+        Dim bTaxed As Boolean
+        Dim iEngineSize As Integer
+        'Decimal is more Accurate than Single or Double.
+        Dim decPrice As Decimal
+        Dim dtDateRegistered As Date
+
+        stMake = "Ford"
+        stModel = "Escort"
+        iDoors = 5
+        stColor = "red"
+        bTaxed = True
+        iEngineSize = 1200
+        decPrice = 19999.99
+        'Hashes must be used for a date. Month/Date/Year. 
+        dtDateRegistered = #11/2/2020#
+
+        MsgBox("The make is " & stMake & " " & "the price is " & "$" & decPrice & ".")
+
+
+    End Sub
 End Class

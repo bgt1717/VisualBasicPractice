@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         startButton = New Button()
         Button1 = New Button()
+        btnDataTypes = New Button()
         SuspendLayout()
         ' 
         ' startButton
@@ -47,11 +48,21 @@ Partial Class Form1
         Button1.Text = "Press Here2"
         Button1.UseVisualStyleBackColor = False
         ' 
+        ' btnDataTypes
+        ' 
+        btnDataTypes.Location = New Point(225, 100)
+        btnDataTypes.Name = "btnDataTypes"
+        btnDataTypes.Size = New Size(135, 48)
+        btnDataTypes.TabIndex = 2
+        btnDataTypes.Text = "DataTypes"
+        btnDataTypes.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1180, 636)
+        Controls.Add(btnDataTypes)
         Controls.Add(Button1)
         Controls.Add(startButton)
         Name = "Form1"
@@ -61,5 +72,6 @@ Partial Class Form1
 
     Friend WithEvents startButton As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnDataTypes As Button
 
 End Class
