@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class lstOccuptation
 
     Private Sub startButton_Click(sender As Object, e As EventArgs) Handles startButton.Click
         ' This is another comment. It explains that a message is displayed after a click.
@@ -50,6 +50,24 @@
         MsgBox("The make is " & stMake & Environment.NewLine &
                "the price is " & "$" & decPrice & ".")
 
+
+    End Sub
+
+    Private Sub ButtonGo_Click(sender As Object, e As EventArgs) Handles ButtonGo.Click
+
+        Dim stFirstName As String
+        Dim stLastName As String
+        Dim stGender As String
+
+        'stFirstName = InputBox("please enter your first name")
+        'MsgBox("hello " & stFirstName)
+
+        'Get the text from the textBox and assign to the variable.  
+        stFirstName = txtFirstName.Text
+        stLastName = txtLastName.Text
+        stGender = txtGender.Text
+
+        MsgBox("Hello " & stFirstName & " " & stLastName & " you are a " & stGender)
 
     End Sub
 End Class
