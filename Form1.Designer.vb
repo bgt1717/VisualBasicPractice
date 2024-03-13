@@ -29,28 +29,29 @@ Partial Class Form1
         ' startButton
         ' 
         startButton.BackColor = SystemColors.ControlDark
-        startButton.Location = New Point(38, 96)
+        startButton.Location = New Point(225, 46)
         startButton.Name = "startButton"
-        startButton.Size = New Size(305, 128)
+        startButton.Size = New Size(135, 48)
         startButton.TabIndex = 0
         startButton.Text = "Press Here"
         startButton.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
-        Button1.BackColor = SystemColors.ControlDark
-        Button1.Location = New Point(363, 96)
+        Button1.BackColor = Color.YellowGreen
+        Button1.ForeColor = Color.Crimson
+        Button1.Location = New Point(366, 46)
         Button1.Name = "Button1"
-        Button1.Size = New Size(305, 128)
+        Button1.Size = New Size(135, 48)
         Button1.TabIndex = 1
-        Button1.Text = "Press Here"
+        Button1.Text = "Press Here2"
         Button1.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1180, 636)
         Controls.Add(Button1)
         Controls.Add(startButton)
         Name = "Form1"
